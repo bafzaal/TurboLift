@@ -41,6 +41,21 @@ Game  Menu         |  Game Play | Game Complete
 ## How To Play
 
 ### Objective
+<p align="justify"> 
+   The Objective of TurboLift is to pick up passengers and drop them off to the destination location (finish line) in the fastest time possible.
+</p>
+
+### HUD
+HUD Element             |  Description
+:-------------------------:|:-------------------------:
+<img src="READMEAssets/PassengerHUD.png" title="Passenger HUD" width="80px" height="40px">  | <p> First value indicates the amount of passengers that have been picked up and are currently in the Turbo Car. Second value indicates total amount of passengers on the map that need to be picked up.</p>
+<img src="READMEAssets/TimeHUD.png" title="Time HUD" width="170px" height="40px"> |  <p> Total elapsed time.</p>
+
+### Gameplay
+Game Element             |  Description
+:-------------------------:|:-------------------------:
+<img src="READMEAssets/PassengerAvail.png" title="Passenger Avail" width="100px" height="140px">  | <p> The passengers are on the side of the road. In order to pick them up the car must drive over one of the red arrows.</p>
+<img src="READMEAssets/PassengerPicked.png" title="Passenger Picked" width="100px" height="140px"> |  <p> Once the car drives over a red arrow. The passengers disappear and the PassengerHUD count is incremented. This indicates that the passenger has been picked up and is ready to be dropped of to the target location. </p>
 
 ### Controls
 
