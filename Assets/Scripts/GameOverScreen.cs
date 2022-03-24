@@ -17,7 +17,8 @@ public class GameOverScreen : MonoBehaviour
 
     public void RestartButton()
     {
-    	SceneManager.LoadScene("GameScene");
+        Scene scene = SceneManager.GetActiveScene();
+    	SceneManager.LoadScene(scene.name);
     }
 
     public void ExitButton()
