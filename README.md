@@ -55,7 +55,14 @@ HUD Element             |  Description
 Game Element             |  Description
 :-------------------------:|:-------------------------:
 <img src="READMEAssets/PassengerAvail.png" title="Passenger Avail" width="100px" height="140px">  | <p> The passengers are on the side of the road. In order to pick them up the car must drive over one of the red arrows.</p>
-<img src="READMEAssets/PassengerPicked.png" title="Passenger Picked" width="100px" height="140px"> |  <p> Once the car drives over a red arrow. The passengers disappear and the PassengerHUD count is incremented. This indicates that the passenger has been picked up and is ready to be dropped of to the target location. </p>
+<img src="READMEAssets/PassengerPicked.png" title="Passenger Picked" width="100px" height="140px"> |  <p> Once the car drives over a red arrow. The passengers disappear and the PassengerHUD count is incremented. This indicates that the passenger has been picked up and is ready to be dropped off to the target location. </p>
+<img src="READMEAssets/FinishLine.png" title="Finish Line" width="100px" height="140px"> |  <p> The finish line is the target destination where all passengers must be dropped off at. </p>
 
 ### Controls
+Button             |  Description
+:-------------------------:|:-------------------------:
+W or ↑| <p> Accelerate and drive forward </p>
+S or ↓| <p> Brake and reverse the car </p>
+A or ← | <p> Steer Left </p>
+D or → | <p> Steer Right </p>
 
