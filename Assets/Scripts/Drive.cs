@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Drive : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Drive : MonoBehaviour
     public GameObject passenger1;
     public GameObject passenger2;
     public GameObject passenger3;
+    public Text speedText;
     Rigidbody2D rb;
 
     public static event Action ArrowDrivenOver = delegate {};
@@ -33,6 +35,21 @@ public class Drive : MonoBehaviour
 
        rb.AddRelativeForce(Vector2.up * speed);
        rb.AddRelativeForce(-Vector2.right * rb.velocity.magnitude * steerAmount / 2);
+       
+
+    }
+
+
+    private void LateUpdate(){
+
+       if(speed<0){
+         speedText.color = Color.red; 
+       }else if(speed>0){
+          speedText.color = Color.green; 
+       }else{
+          speedText.color = Color.white; 
+       }
+       speedText.text = ((int)speed*4).ToString()+  " km/h";
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

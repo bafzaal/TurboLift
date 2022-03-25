@@ -27,6 +27,6 @@ public class MapSelection : MonoBehaviour
 
     public void Back()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("PlayerDetails");
     }
 }

@@ -9,15 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 8205013f746144086a88998a17173853
   - enabled: 1
+    path: Assets/Scenes/Leaderboards.unity
+    guid: 5ecac02f3583d48e499a0c7d7b5ad1c8
+  - enabled: 1
+    path: Assets/Scenes/PlayerDetails.unity
+    guid: 189e3cb96e1124cabbba537828635bee
+  - enabled: 1
     path: Assets/Scenes/MapSelect.unity
     guid: ec2d8409ae395479ca8b1dabea213708
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/GameScene2.unity
-    guid: dbf9066832a4749198387440d09b7e95
-  - enabled: 1
     path: Assets/Scenes/GameScene3.unity
     guid: 7d321cbd292404ada862711cf9a54b09
+  - enabled: 1
+    path: Assets/Scenes/GameScene2.unity
+    guid: dbf9066832a4749198387440d09b7e95
   m_configObjects: {}

@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
-    {
-    	SceneManager.LoadScene("MapSelect");
-    }
+    {      
+      SceneManager.LoadScene("PlayerDetails");
 
+    }
+    public void Leaderboards()
+    {      
+      SceneManager.LoadScene("Leaderboards");
+
+    }
     public void QuitGame()
     {
     	Application.Quit();

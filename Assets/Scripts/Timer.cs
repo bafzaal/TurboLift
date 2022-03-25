@@ -39,7 +39,7 @@ public class Timer : MonoBehaviour
     public void RunCo()
     {
     	ClickStop();
-        GameOverScreen.Setup(text.text);
+        GameOverScreen.Setup(text.text, currTime);
     }
 
     public void ClickPlay()
