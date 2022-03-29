@@ -8,6 +8,8 @@ TagManager:
   - Arrow1
   - Arrow3
   - FinishLine
+  - Mud
+  - Boost
   layers:
   - Default
   - TransparentFX

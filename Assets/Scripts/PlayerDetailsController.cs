@@ -21,12 +21,13 @@ public class PlayerDetailsController : MonoBehaviour
     public void SelectMap()
     {
       PlayerName = PlayerNameField.text.ToString();
-    	SceneManager.LoadScene("MapSelect");
+      SceneManager.LoadScene("CarSelection");
     }
 
     public void Back()
     {
       SceneManager.LoadScene("Menu");
     }
+
 }
 
