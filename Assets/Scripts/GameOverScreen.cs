@@ -15,8 +15,8 @@ public class GameOverScreen : MonoBehaviour
     	gameObject.SetActive(true);
     	pointsText.text = score;
 
-      Debug.Log(currTime);
       int milliseconds = (int)(currTime*1000);
+
       string sceneName = SceneManager.GetActiveScene().name;
       int leaderBoardID = 0;
 
@@ -29,25 +29,20 @@ public class GameOverScreen : MonoBehaviour
         leaderBoardID = 2119;
       }
 
-      LootLockerSDKManager.StartGuestSession((response) =>
-        {
-            if (!response.success)
-            {
-                Debug.Log("error starting LootLocker session");
+      Debug.Log(leaderBoardID);
 
-                return;
-            }
+      Debug.Log(sceneName);
+      Debug.Log(PlayerDetailsController.instance.PlayerName);
 
-            Debug.Log("successfully started LootLocker session");
-        });
-      LootLockerSDKManager.SubmitScore(PlayerDetailsController.instance.PlayerName, milliseconds , leaderBoardID, (response) =>
+      LootLockerSDKManager.SubmitScore(PlayerDetailsController.instance.PlayerName, milliseconds, leaderBoardID, (response) =>
       {
           if (response.statusCode == 200) {
               Debug.Log("Successful");
           } else {
-              Debug.Log("failed: " + response.Error);
+              Debug.Log("Failed: " + response.Error);
           }
       });
+     
     }
 
     public void RestartButton()

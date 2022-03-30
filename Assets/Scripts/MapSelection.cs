@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using LootLocker.Requests;
 public class MapSelection : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -21,6 +21,21 @@ public class MapSelection : MonoBehaviour
 
     public void SelectMap()
     {
+
+      LootLockerSDKManager.StartGuestSession((response) =>
+      {
+          if (!response.success)
+          {
+              Debug.Log("error starting LootLocker session");
+
+              return;
+          }else{
+
+            Debug.Log("successfully started LootLocker session");
+
+          }
+      });
+
     	string mapName = EventSystem.current.currentSelectedGameObject.gameObject.transform.GetChild(0).GetComponent<Text>().text;
     	SceneManager.LoadScene(mapName);
     }

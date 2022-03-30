@@ -17,18 +17,6 @@ public class LeaderboardsController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      LootLockerSDKManager.StartGuestSession((response) =>
-        {
-            if (!response.success)
-            {
-                Debug.Log("error starting LootLocker session");
-
-                return;
-            }
-
-            Debug.Log("successfully started LootLocker session");
-        });
-
 
       LootLockerSDKManager.GetScoreList(2116, count, (response) =>
       {

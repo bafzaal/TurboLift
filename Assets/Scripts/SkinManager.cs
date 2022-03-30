@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-using UnityEngine.SceneManagement;
-
+using UnityEngine.SceneManagement; 
+using UnityEngine.UI;
 public class SkinManager : MonoBehaviour
 {
+    public static SkinManager instance;
     public Sprite[] Icons; // icons array
     public Sprite[] AccelIcons; // icons array
     public Sprite[] HandlingIcons; // icons array
@@ -14,6 +14,9 @@ public class SkinManager : MonoBehaviour
     public SpriteRenderer handSr;
     private int selectedSkin = 0;
     public GameObject playerskin;
+    public Sprite carSprite;
+  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,11 @@ public class SkinManager : MonoBehaviour
             if(sr.sprite == Icons[i])
                 selectedSkin = i;
         }
+    }
+
+    private void Awake(){
+      instance = this;
+      DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
@@ -66,7 +74,7 @@ public class SkinManager : MonoBehaviour
     }
 
     public void PlayGame(){
-        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/selectedskin.prefab");
+        carSprite = Icons[selectedSkin];
         SceneManager.LoadScene("MapSelect");
     }
 

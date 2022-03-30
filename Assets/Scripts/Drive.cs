@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class Drive : MonoBehaviour
 {
     public float acceleration;
@@ -28,11 +27,14 @@ public class Drive : MonoBehaviour
     public SpriteRenderer selectedSprite;
     public GameObject selectedCar;
     public Animator animator;
+
+  
     private void Start()
     {
+
         selectedCar.SetActive(false);
         sprite = GetComponent<SpriteRenderer>();
-        sprite.sprite = selectedSprite.sprite;
+        sprite.sprite = SkinManager.instance.carSprite;
         rb = GetComponent<Rigidbody2D>();
         ColorUtility.TryParseHtmlString(slowedHexColor, out slowedColor);
         DetermineCarType();
@@ -123,7 +125,7 @@ public class Drive : MonoBehaviour
         speed = Input.GetAxis("Vertical") * acceleration;
     }
     private void DetermineCarType(){
-      switch(selectedSprite.sprite.name){
+      switch(SkinManager.instance.carSprite.ToString()){
         case "F1_car08":
           acceleration = 50;
           steerPower = 0.2f;
