@@ -58,6 +58,12 @@ Game Element             |  Description
 <img src="READMEAssets/PassengerPicked.png" title="Passenger Picked" width="100px" height="140px"> |  <p> Once the car drives over a red arrow. The passengers disappear and the PassengerHUD count is incremented. This indicates that the passenger has been picked up and is ready to be dropped off to the target location. </p>
 <img src="READMEAssets/FinishLine.png" title="Finish Line" width="100px" height="140px"> |  <p> The finish line is the target destination where all passengers must be dropped off at. </p>
 
+### Maps
+
+Box Boulevard         |  Winding Trail | Rocky Road     
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="Assets/Sprite/GameScene.png" title="Box Boulevard" width="100%"> |<img src="Assets/Sprite/GameScene2 1.png" title="Winding Trail" width="100%">|<img src="Assets/Sprite/GameScene3.png" title="Rocky Road" width="100%">
+
 ### Controls
 Button             |  Description
 :-------------------------:|:-------------------------:
