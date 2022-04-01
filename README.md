@@ -9,7 +9,7 @@
 <h3 align="center"> Jayson Pols - jpols </h3>
 
 <h4 align="center"> PLAY HERE: </h4>
-<h6 align="center"><a href="https://play.unity.com/mg/other/turbolift">https://play.unity.com/mg/other/turbolift</a></h6>
+<h6 align="center"><a target="_blank" href="https://play.unity.com/mg/other/turbolift">https://play.unity.com/mg/other/turbolift</a></h6>
 
 
 <!-- TABLE OF CONTENTS -->
