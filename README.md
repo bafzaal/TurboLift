@@ -57,6 +57,9 @@ Game Element             |  Description
 <img src="READMEAssets/PassengerAvail.png" title="Passenger Avail" width="100px" height="140px">  | <p> The passengers are on the side of the road. In order to pick them up the car must drive over one of the red arrows.</p>
 <img src="READMEAssets/PassengerPicked.png" title="Passenger Picked" width="100px" height="140px"> |  <p> Once the car drives over a red arrow. The passengers disappear and the PassengerHUD count is incremented. This indicates that the passenger has been picked up and is ready to be dropped off to the target location. </p>
 <img src="READMEAssets/FinishLine.png" title="Finish Line" width="100px" height="140px"> |  <p> The finish line is the target destination where all passengers must be dropped off at. </p>
+<img src="READMEAssets/Mud.png" title="Mud" width="80px" height="80px"> |  <p> Be wary of the mud as it will slow the car down. Try to avoid it! </p>
+<img src="READMEAssets/Boost.png" title="Boost" width="80px" height="50px"> |  <p> Pick up the boost to go turbo! This will speed up your car and allow you to finish the track faster. </p>
+<img src="READMEAssets/CarSelect.png" title="Car Select" width="300px" height="100px"> |  <p> Find the car of your choice in the car select screen. Each car has their own stats for acceleration and handling. </p>
 
 ### Maps
 
