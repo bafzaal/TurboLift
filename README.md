@@ -44,6 +44,7 @@ Game  Menu         |  Game Play | Game Complete
 ### Built With
 - [Unity](https://unity.com/)
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [LootLocker Unity SDK](https://github.com/LootLocker/unity-sdk)
 
 <!-- HOW TO PLAY -->
 ## How To Play
