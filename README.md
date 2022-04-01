@@ -3,21 +3,29 @@
 </p>
 
 <h1 align="center"> Turbo Lift </h1>
-<h3 align="center"> Bilal Afzaal </h3>
+<h2 align="center"> Group Members: </h3>
+<h3 align="center"> Bilal Afzaal - bafzaal </h3>
+<h3 align="center"> Osman Abdalle - oabdalle </h3>
+<h3 align="center"> Jayson Pols - jpols </h3>
+
 <h4 align="center"> PLAY HERE: </h4>
-<h6 align="center"><a href="https://play.unity.com/mg/other/turbo-lift-v1">https://play.unity.com/mg/other/turbo-lift-v1</a></h6>
+<h6 align="center"><a href="https://play.unity.com/mg/other/turbolift">https://play.unity.com/mg/other/turbolift</a></h6>
 
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Overview](#overview)
-  * [App Screenshots](#app-screenshots)
-  * [Built With](#built-with)
-* [How To Play](#how-to-play)
-  * [Objective](#objective)
-  * [Controls](#controls)
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Overview](#overview)
+  - [App Screenshots](#app-screenshots)
+  - [Built With](#built-with)
+- [How To Play](#how-to-play)
+  - [Objective](#objective)
+  - [HUD](#hud)
+  - [Gameplay](#gameplay)
+  - [Maps](#maps)
+  - [Controls](#controls)
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -50,6 +58,7 @@ HUD Element             |  Description
 :-------------------------:|:-------------------------:
 <img src="READMEAssets/PassengerHUD.png" title="Passenger HUD" width="80px" height="40px">  | <p> First value indicates the amount of passengers that have been picked up and are currently in the Turbo Car. Second value indicates total amount of passengers on the map that need to be picked up.</p>
 <img src="READMEAssets/TimeHUD.png" title="Time HUD" width="170px" height="40px"> |  <p> Total elapsed time.</p>
+<img src="READMEAssets/speedometerHUD.png" title="Speed HUD" width="170px" height="40px"> |  <p> Speed of the Turbo Car.</p>
 
 ### Gameplay
 Game Element             |  Description
@@ -60,6 +69,7 @@ Game Element             |  Description
 <img src="READMEAssets/Mud.png" title="Mud" width="80px" height="80px"> |  <p> Be wary of the mud as it will slow the car down. Try to avoid it! </p>
 <img src="READMEAssets/Boost.png" title="Boost" width="80px" height="50px"> |  <p> Pick up the boost to go turbo! This will speed up your car and allow you to finish the track faster. </p>
 <img src="READMEAssets/CarSelect.png" title="Car Select" width="300px" height="100px"> |  <p> Find the car of your choice in the car select screen. Each car has their own stats for acceleration and handling. </p>
+<img src="READMEAssets/leaderboards-image.png" title="Leaderboards" width="300px" height="100px"> |  <p> View the best TurboLift players for each map. </p>
 
 ### Maps
 
